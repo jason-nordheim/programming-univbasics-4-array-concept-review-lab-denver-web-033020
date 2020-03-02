@@ -7,11 +7,18 @@
 # the value provided. Remember though, that this is not
 # the value that needs to be returned
 def find_element_index(array, value_to_find)
-  array.length.times do | index |
+  index = 0
+  while 0 < array.length
     if array[index] == value_to_find
       return index
     end
+    index += 1 
   end
+  # array.length.times do | index |
+  #   if array[index] == value_to_find
+  #     return index
+  #   end
+  # end
   # implicitely return nil
 end
 
