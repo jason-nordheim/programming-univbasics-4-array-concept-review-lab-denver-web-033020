@@ -29,7 +29,7 @@ def find_max_value(array)
   return max_value
 end
 
-# takes an array of integer values and returns the
+# takes an array of integer values and returns the lowest value 
 def find_min_value(array)
   min_value = array[0]
   do array.length | index |
