@@ -14,12 +14,6 @@ def find_element_index(array, value_to_find)
     end
     index += 1
   end
-  # array.length.times do | index |
-  #   if array[index] == value_to_find
-  #     return index
-  #   end
-  # end
-  # implicitely return nil
 end
 
 # takes an array of integer values and returns the highest integer value
