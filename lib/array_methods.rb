@@ -33,7 +33,7 @@ end
 # takes an array of integer values and returns the lowest value
 def find_min_value(array)
   min_value = array[0]
-  do array.length | index |
+  array.length do | index |
     # if value at index is less than the last
     # lowest value seen before
     # replace the lowest value
