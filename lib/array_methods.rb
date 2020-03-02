@@ -20,7 +20,7 @@ end
 def find_max_value(array)
   max_value = nil
   index = 0
-  while index < array.length
+  while array[index]
     if max_value < array[index]
       max_value = array[index]
     end
