@@ -18,7 +18,7 @@ end
 
 # takes an array of integer values and returns the highest integer value
 def find_max_value(array)
-  max_value = nil
+  max_value = 0
   index = 0
   while array[index]
     if max_value < array[index]
@@ -31,14 +31,12 @@ end
 
 # takes an array of integer values and returns the lowest value
 def find_min_value(array)
-  min_value = array[0]
-  array.length.times do | index |
-    # if value at index is less than the last
-    # lowest value seen before
-    # replace the lowest value
-    if min_value < array[index]
+  min_value = 0
+  index = 0
+  while array[index]
+    if array[index] < min_value
       min_value = array[index]
     end
+
   end
-  return max_value
 end
