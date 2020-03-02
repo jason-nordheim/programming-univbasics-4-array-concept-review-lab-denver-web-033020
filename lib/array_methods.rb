@@ -8,7 +8,7 @@
 # the value that needs to be returned
 def find_element_index(array, value_to_find)
   index = 0
-  while index < array.length
+  while array[index]
     if array[index] == value_to_find
       return index
     end
