@@ -19,6 +19,9 @@ def find_max_value(array)
   # default to first value
   max_value = array[0]
   do array.length | index |
+    # if value at index is greater than the last
+    # highest values seen before
+    # replace the highest value 
     if max_value > array[index]
       max_value = array[index]
   end
@@ -26,5 +29,10 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  # Add your solution here
+  max_value = array[0]
+  do array.length | index |
+    if max_value < array[index]
+      max_value = array[index]
+  end
+  return max_value
 end
