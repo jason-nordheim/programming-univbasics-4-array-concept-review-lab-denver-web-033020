@@ -31,13 +31,13 @@ end
 
 # takes an array of integer values and returns the lowest value
 def find_min_value(array)
-  min_value = 0
+  min_value = array[0]
   index = 0
   while array[index]
     if array[index] < min_value
       min_value = array[index]
     end
-    index += 1 
+    index += 1
   end
   return min_value
 end
