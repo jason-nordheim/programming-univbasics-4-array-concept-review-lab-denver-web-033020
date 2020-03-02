@@ -38,4 +38,5 @@ def find_min_value(array)
       min_value = array[index]
     end
   end
+  return min_value
 end
