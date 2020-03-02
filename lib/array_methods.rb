@@ -18,17 +18,12 @@ end
 
 # takes an array of integer values and returns the highest integer value
 def find_max_value(array)
-  # default to first value
-  max_value = array[0]
-  array.length.times do | index |
-    # if value at index is greater than the last
-    # highest value seen before
-    # replace the highest value
-    if max_value > array[index]
-      max_value = array[index]
-    end
+  max_value = 0
+  index = 0
+  while index < array.length
+    if max_value < array[index]
+      max_value = array[index] 
   end
-  return max_value
 end
 
 # takes an array of integer values and returns the lowest value
