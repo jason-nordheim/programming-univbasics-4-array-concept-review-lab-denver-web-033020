@@ -18,11 +18,11 @@ end
 
 # takes an array of integer values and returns the highest integer value
 def find_max_value(array)
-  max_value = 0
+  max_value = nil 
   index = 0
   while index < array.length
     if max_value < array[index]
-      max_value = array[index] 
+      max_value = array[index]
   end
 end
 
