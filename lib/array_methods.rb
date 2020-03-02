@@ -25,6 +25,7 @@ def find_max_value(array)
     # replace the highest value
     if max_value > array[index]
       max_value = array[index]
+    end 
   end
   return max_value
 end
@@ -38,7 +39,7 @@ def find_min_value(array)
     # replace the lowest value
     if min_value < array[index]
       min_value = array[index]
-    end 
+    end
   end
   return max_value
 end
