@@ -24,9 +24,8 @@ def find_max_value(array)
     if max_value < array[index]
       max_value = array[index]
     end
-    index += 1 
+    index += 1
   end
-
 end
 
 # takes an array of integer values and returns the lowest value
