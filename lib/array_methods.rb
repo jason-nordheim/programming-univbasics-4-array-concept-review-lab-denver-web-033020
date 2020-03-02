@@ -9,7 +9,7 @@
 def find_element_index(array, value_to_find)
   do array.length |index|
     if array[index] == value_to_find
-      return index 
+      return index
     end
   end
 end
