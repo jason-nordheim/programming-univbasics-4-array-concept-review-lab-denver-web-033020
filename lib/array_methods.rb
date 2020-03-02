@@ -7,7 +7,7 @@
 # the value provided. Remember though, that this is not
 # the value that needs to be returned
 def find_element_index(array, value_to_find)
-  array.times do | index |
+  array.length.times do | index |
     if array[index] == value_to_find
       return index
     end
@@ -19,7 +19,7 @@ end
 def find_max_value(array)
   # default to first value
   max_value = array[0]
-  array.times do | index |
+  array.length.times do | index |
     # if value at index is greater than the last
     # highest value seen before
     # replace the highest value
@@ -33,7 +33,7 @@ end
 # takes an array of integer values and returns the lowest value
 def find_min_value(array)
   min_value = array[0]
-  array.times do | index |
+  array.length.times do | index |
     # if value at index is less than the last
     # lowest value seen before
     # replace the lowest value
