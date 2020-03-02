@@ -7,7 +7,7 @@
 # the value provided. Remember though, that this is not
 # the value that needs to be returned
 def find_element_index(array, value_to_find)
-  do array.length |index|
+  do array.length | index |
     if array[index] == value_to_find
       return index
     end
@@ -25,7 +25,7 @@ def find_max_value(array)
     # replace the highest value
     if max_value > array[index]
       max_value = array[index]
-    end 
+    end
   end
   return max_value
 end
